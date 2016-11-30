@@ -1,0 +1,36 @@
+body{
+  /*background-image: url("http://www.animateit.net/data/media/august2009/space_bg.gif");*/
+  /*background-repeat: repeat-y repeat-x;*/
+  
+  font-family: LucidaCalligraphy-Italic;
+  color: white;
+}
+.main-ball{
+  background: #000000;
+  border-radius: 50%;
+  height: 500px;
+  width: 500px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-end;
+  
+}
+.inside-ball{
+  background: #FFFFFF;
+  border-radius: 50%;
+  height: 190px;
+  width: 190px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 6em;
+  margin-right: 6em;
+}
+.eight{
+  transform: rotate(-25deg);
+  font-size: 160px;
+  color: #000000;
+  letter-spacing: 0;
+}
+
+
