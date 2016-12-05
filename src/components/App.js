@@ -8,14 +8,13 @@ var words = [
     'yup',
     'im not sure',
     'def',
-    'u hurt me',
     'if only',
     ':~) yes',
     'reply ~hazy~',
     'k',
     ':~) no',
     'wat?',
-    'ask me again',
+    'ask again',
     'nah',
     ];
 
@@ -24,9 +23,6 @@ var App = React.createClass({
     return{
       gameStatus: 'playing'  
     }
-  },
-  componentDidMount: function(){
-    this._tellFortune();
   },
   _startGame: function(){
     this.setState({
@@ -55,23 +51,35 @@ var App = React.createClass({
   if(this.state.gameStatus === 'playing'){  
     return (
       <main>
-        <div className='main-ball floating'>
-          <div className= 'inside-ball'>
-            <p className='eight'>8</p>
+      <div className='logo-container'>
+        <a href='https://github.com/krustina/magic-8-ball'>
+          <img className= 'logo' src='magic-8-ball-icon.png'/>
+        </a>
+      </div>
+      
+          <div className='main-ball floating'>
+            <div className= 'inside-ball'>
+              <p className='eight'>:~)</p>
+            </div>
           </div>
-        </div>
-        
-        <form onSubmit={this.handleSubmit} className= 'ask-box floating-two'>
-            <p className= 'question'>Ask me a question...</p>
-        
-            <input ref="userInput" type="text" />
-        </form>
+          
+          <form className= 'ask-box floating-two'>
+              <p className= 'question'>Ask me a question...</p>
+              <div className='ask-container'>
+                <input ref="userInput" type="text"/>
+                <button onClick={this._handleSubmit} className='ask-button'>Ask</button>
+              </div>
+          </form>
+       
       </main>
       );
     }
   if (this.state.gameStatus === 'predicted'){
     return(
     <main>
+    <div className='logo-container'>
+        <img className= 'logo' src='magic-8-ball-icon.png'/>
+    </div>
         <div className='main-ball-two floating'>
           <div className='inside-rim'>
               <div className= 'triangle'>

@@ -1,8 +1,5 @@
-@import url('https://fonts.googleapis.com/css?family=Eagle+Lake');
-
 body{
-  background-image: url('http://4.bp.blogspot.com/-xs_6fQS0UXw/VNDdzonZwsI/AAAAAAAAGz4/ri9pvxIiOrc/s1600/Stucco%2Bwall%2Bwhite%2Btexture%2Bfeb_2015%2B4770x3178.jpg');
-  font-family: 'LucidaCalligraphy-Italic';
+  font-family: 'Helvetica';
   height: 100%;
   width: 100%;
   margin:0;
@@ -15,18 +12,30 @@ html{
   height: 100%;
   width: 100%;
 }
-
 main{
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   height: 100%;
   width: 100%;
 }
+.logo-container{
+  width: 100%;
+}
+.logo{
+  height: 80px;
+  width: 80px;
+  margin-left: 25px;
+}
+.ball-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
 .main-ball{
   background: black;
-  /*background-image: url('http://images.photowall.com/products/46612/dark-concrete-wall.jpg?h=650&q=90&');*/
   border-radius: 50%;
   height: 400px;
   width: 400px;
@@ -34,13 +43,12 @@ main{
   align-items: flex-start;
   justify-content: flex-end;
   margin: 0;
-  
 }
 .inside-ball{
-  background-image: url('http://3.bp.blogspot.com/-jxUceRVeBBc/TggwFpsI3_I/AAAAAAAABYM/tF3I6KDaZqc/s1600/heavy-orange-peel-texture-400x300.jpg');
+  background: white;
   border-radius: 50%;
-  height: 180px;
-  width: 180px;
+  height: 150px;
+  width: 150px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -48,16 +56,17 @@ main{
   margin-right: 5em;
 }
 .eight{
-  transform: rotate(-25deg);
-  font-size: 130px;
+  transform: rotate(60deg);
+  font-size: 80px;
   color: #000000;
+  margin-left: 20px;
 }
 .ask-box{
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: 35px;
+  font-size: 25px;
   color: black;
   margin-top: 1.5em;
   font-family: cursive;
@@ -66,23 +75,34 @@ main{
 .question{
   margin-bottom: 0.25em;
   margin-top: 0.25em;
-  
 }
 input{
   outline: none;
   height: 50px;
   width: 325px;
   background-color: rgba(255,255,255,0);
-  border: none;
 }
 input[type='text']{
   text-align: center;
   font-family: inherit;
-  font-size: 25px;
+  font-size: 20px;
 }
+.ask-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.ask-button{
+  font-family: inherit;
+  font-size: 20px;
+  background: rgba(255,255,255,0);
+  height: 57px;
+  outline: none;
+}
+
 /*OTHER SIDE*/
 .main-ball-two{
-  background-image: url('http://images.photowall.com/products/46612/dark-concrete-wall.jpg?h=650&q=90&');
+  background: black;
   border-radius: 50%;
   height: 400px;
   width: 400px;
@@ -91,30 +111,27 @@ input[type='text']{
   justify-content: center;
   margin: 0;
 }
-
 .triangle{
   width: 0;
   height: 0;
   border-style: solid;
-  border-width: 112.6px 65px 0 65px;
+  border-width: 112.6px 63px 0 63px;
   border-color: #0000ff transparent transparent transparent;
   -webkit-transform:rotate(360deg);
   margin-top: 2em;
   display: flex;
   align-items: center;
   justify-content: center;
-  
 }
 .inside-rim{
   background: radial-gradient(50% 50%, #002BFF 5%, #000315 81%, #000000 83%);  
   border: 8px solid #FFFFFF;
   border-radius: 50%;
-  height: 165px;
-  width: 165px;
+  height: 150px;
+  width: 150px;
   display: flex;
   align-items: center;
   justify-content: center;
-  
 }
 .fortune{
   font-size: 18px;
@@ -123,15 +140,13 @@ input[type='text']{
   color: #FFFFFF;
   letter-spacing: 0;
   text-align: center;
-  margin-bottom: 9.25em;
-  
+  margin-bottom: 8.25em;
 }
 .restart-button{
   margin-top: 5.5em;
-  font-family: inherit;
+  font-family: cursive;
   font-size: 20px;
   background: rgba(255,255,255,0.5);
- 
   outline: none;
   color: black;
 }
@@ -175,7 +190,6 @@ input[type='text']{
   .main-ball{
     height: 200px;
     width: 200px;
-    
   }
   .inside-ball{
     height: 90px;
@@ -196,15 +210,17 @@ input[type='text']{
   input[type='text']{
   font-size: 15px;
 }
+  .ask-button{
+  height: 37px;
+}
   /*OTHER SIDE*/
-.main-ball-two{
+  .main-ball-two{
   height: 200px;
   width: 200px;
   }
   .triangle{
     border-width: 60.6px 35px 0 35px;
     margin-top: 1em;
-    
   }
   .inside-rim{
     height: 85px;
