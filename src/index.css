@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css?family=Eagle+Lake');
+
+body{
+  background-image: url('http://4.bp.blogspot.com/-xs_6fQS0UXw/VNDdzonZwsI/AAAAAAAAGz4/ri9pvxIiOrc/s1600/Stucco%2Bwall%2Bwhite%2Btexture%2Bfeb_2015%2B4770x3178.jpg');
+  font-family: 'LucidaCalligraphy-Italic';
+  height: 100%;
+  width: 100%;
+  margin:0;
+}
+html{
+  height: 100%;
+  width: 100%;
+}
+#root{
+  height: 100%;
+  width: 100%;
+}
+
+main{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+}
+.main-ball{
+  background: black;
+  /*background-image: url('http://images.photowall.com/products/46612/dark-concrete-wall.jpg?h=650&q=90&');*/
+  border-radius: 50%;
+  height: 400px;
+  width: 400px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-end;
+  margin: 0;
+  
+}
+.inside-ball{
+  background-image: url('http://3.bp.blogspot.com/-jxUceRVeBBc/TggwFpsI3_I/AAAAAAAABYM/tF3I6KDaZqc/s1600/heavy-orange-peel-texture-400x300.jpg');
+  border-radius: 50%;
+  height: 180px;
+  width: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 5em;
+  margin-right: 5em;
+}
+.eight{
+  transform: rotate(-25deg);
+  font-size: 130px;
+  color: #000000;
+}
+.ask-box{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 35px;
+  color: black;
+  margin-top: 1.5em;
+  font-family: cursive;
+  font-weight: 500;
+}
+.question{
+  margin-bottom: 0.25em;
+  margin-top: 0.25em;
+  
+}
+input{
+  outline: none;
+  height: 50px;
+  width: 325px;
+  background-color: rgba(255,255,255,0);
+  border: none;
+}
+input[type='text']{
+  text-align: center;
+  font-family: inherit;
+  font-size: 25px;
+}
+/*OTHER SIDE*/
+.main-ball-two{
+  background-image: url('http://images.photowall.com/products/46612/dark-concrete-wall.jpg?h=650&q=90&');
+  border-radius: 50%;
+  height: 400px;
+  width: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+}
+
+.triangle{
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 112.6px 65px 0 65px;
+  border-color: #0000ff transparent transparent transparent;
+  -webkit-transform:rotate(360deg);
+  margin-top: 2em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+.inside-rim{
+  background: radial-gradient(50% 50%, #002BFF 5%, #000315 81%, #000000 83%);  
+  border: 8px solid #FFFFFF;
+  border-radius: 50%;
+  height: 165px;
+  width: 165px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+.fortune{
+  font-size: 18px;
+  font-family: cursive;
+  font-weight: 800;
+  color: #FFFFFF;
+  letter-spacing: 0;
+  text-align: center;
+  margin-bottom: 9.25em;
+  
+}
+.restart-button{
+  margin-top: 5.5em;
+  font-family: inherit;
+  font-size: 20px;
+  background: rgba(255,255,255,0.5);
+ 
+  outline: none;
+  color: black;
+}
+/*EFFECTS*/
+.floating{
+    float: left;
+    -webkit-animation-name: Floatingx;
+    -webkit-animation-duration: 5s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: ease-in-out;
+    -moz-animation-name: Floating;
+    -moz-animation-duration: 5s;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-timing-function: ease-in-out;
+
+}
+
+@-webkit-keyframes Floatingx{
+    from {-webkit-transform:translate(0, 0px);}
+    65% {-webkit-transform:translate(0, 15px);}
+    to {-webkit-transform: translate(0, -0px);    }    
+}
+    
+@-moz-keyframes Floating{
+    from {-moz-transform:translate(0, 0px);}
+    65% {-moz-transform:translate(0, 15px);}
+    to {-moz-transform: translate(0, -0px);}    
+}
+.floating-two{
+  float: left;
+    -webkit-animation-name: Floatingx;
+    -webkit-animation-duration: 3s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: ease-in-out;
+    -moz-animation-name: Floating;
+    -moz-animation-duration: 3s;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-timing-function: ease-in-out;
+}
+@media only screen and (max-width: 500px) {
+  .main-ball{
+    height: 200px;
+    width: 200px;
+    
+  }
+  .inside-ball{
+    height: 90px;
+    width: 90px;
+    margin-top: 2.5em;
+    margin-right: 2.5em;
+  }
+  .eight{
+    font-size: 60px;
+  }
+  .ask-box{
+    font-size: 20px;
+  }
+  input{
+    height: 30px;
+    width: 225px;
+  }
+  input[type='text']{
+  font-size: 15px;
+}
+  /*OTHER SIDE*/
+.main-ball-two{
+  height: 200px;
+  width: 200px;
+  }
+  .triangle{
+    border-width: 60.6px 35px 0 35px;
+    margin-top: 1em;
+    
+  }
+  .inside-rim{
+    height: 85px;
+    width: 85px;
+    border: 4px solid #FFFFFF;
+  }
+  .fortune{
+    margin-bottom: 9em;
+    font-size: 10px;
+  }
+  
+}
