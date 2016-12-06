@@ -27,12 +27,15 @@ main{
   height: 80px;
   width: 80px;
   margin-left: 25px;
+  margin-top: 10px;
 }
-.ball-container{
+.content{
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  height: 100vh;
+  margin-bottom: 1em
 }
 .main-ball{
   background: black;
@@ -42,7 +45,6 @@ main{
   display: flex;
   align-items: flex-start;
   justify-content: flex-end;
-  margin: 0;
 }
 .inside-ball{
   background: white;
@@ -155,11 +157,11 @@ input[type='text']{
 .floating{
     float: left;
     -webkit-animation-name: Floatingx;
-    -webkit-animation-duration: 5s;
+    -webkit-animation-duration: 4s;
     -webkit-animation-iteration-count: infinite;
     -webkit-animation-timing-function: ease-in-out;
     -moz-animation-name: Floating;
-    -moz-animation-duration: 5s;
+    -moz-animation-duration: 4s;
     -moz-animation-iteration-count: infinite;
     -moz-animation-timing-function: ease-in-out;
 
@@ -167,13 +169,13 @@ input[type='text']{
 
 @-webkit-keyframes Floatingx{
     from {-webkit-transform:translate(0, 0px);}
-    65% {-webkit-transform:translate(0, 15px);}
+    65% {-webkit-transform:translate(0, 30px);}
     to {-webkit-transform: translate(0, -0px);    }    
 }
     
 @-moz-keyframes Floating{
     from {-moz-transform:translate(0, 0px);}
-    65% {-moz-transform:translate(0, 15px);}
+    75% {-moz-transform:translate(0, 30px);}
     to {-moz-transform: translate(0, -0px);}    
 }
 .floating-two{
@@ -199,7 +201,7 @@ input[type='text']{
     margin-right: 2.5em;
   }
   .eight{
-    font-size: 60px;
+    font-size: 50px;
   }
   .ask-box{
     font-size: 20px;
@@ -222,6 +224,7 @@ input[type='text']{
   .triangle{
     border-width: 60.6px 35px 0 35px;
     margin-top: 1em;
+    
   }
   .inside-rim{
     height: 85px;
@@ -229,8 +232,9 @@ input[type='text']{
     border: 4px solid #FFFFFF;
   }
   .fortune{
-    margin-bottom: 9em;
-    font-size: 10px;
+    margin-bottom: 7em;
+    font-size: 12px;
+    line-height: 12px;
   }
   
 }

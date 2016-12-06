@@ -56,12 +56,13 @@ var App = React.createClass({
   if(this.state.gameStatus === 'playing'){  
     return (
       <main>
-      <div className='logo-container'>
+      <header className='logo-container'>
         <a href='https://github.com/krustina/magic-8-ball'>
           <img className='logo' src='magic-8-ball-icon2.png' role="presentation"/>
         </a>
-      </div>
+      </header>
       
+      <div className='content'>  
           <div className='main-ball floating'>
             <div className='inside-ball'>
               <p className='eight'>:~)</p>
@@ -75,16 +76,19 @@ var App = React.createClass({
                 <button onClick={this._handleSubmit} className='ask-button'>Ask</button>
               </div>
           </form>
-       
+       </div>
       </main>
       );
     }
   if (this.state.gameStatus === 'predicted'){
     return(
     <main>
-    <div className='logo-container'>
-        <img className='logo' src='magic-8-ball-icon2.png' role="presentation"/>
-    </div>
+      <header className='logo-container'>
+        <a href='https://github.com/krustina/magic-8-ball'>
+          <img className='logo' src='magic-8-ball-icon2.png' role="presentation"/>
+        </a>
+      </header>
+      <div className='content'>  
         <div className='main-ball-two floating'>
           <div className='inside-rim'>
               <div className='triangle'>
@@ -94,6 +98,7 @@ var App = React.createClass({
         </div>
         
         <button onClick={this._startGame} className='restart-button floating-two'>Play again?</button>
+        </div>
       </main>
       )
     }
