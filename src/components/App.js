@@ -1,8 +1,7 @@
-var React = require('react');
-var Link = require('react-router').Link;
+var React=require('react');
 
 
-var words = [
+var words=[
     'lol no',
     'ha yea',
     'yup',
@@ -53,18 +52,18 @@ var App = React.createClass({
       <main>
       <div className='logo-container'>
         <a href='https://github.com/krustina/magic-8-ball'>
-          <img className= 'logo' src='magic-8-ball-icon.png'/>
+          <img className='logo' src='magic-8-ball-icon.png' role="presentation"/>
         </a>
       </div>
       
           <div className='main-ball floating'>
-            <div className= 'inside-ball'>
+            <div className='inside-ball'>
               <p className='eight'>:~)</p>
             </div>
           </div>
           
-          <form className= 'ask-box floating-two'>
-              <p className= 'question'>Ask me a question...</p>
+          <form className='ask-box floating-two'>
+              <p className='question'>Ask me a question...</p>
               <div className='ask-container'>
                 <input ref="userInput" type="text"/>
                 <button onClick={this._handleSubmit} className='ask-button'>Ask</button>
@@ -78,11 +77,11 @@ var App = React.createClass({
     return(
     <main>
     <div className='logo-container'>
-        <img className= 'logo' src='magic-8-ball-icon.png'/>
+        <img className='logo' src='magic-8-ball-icon.png' role="presentation"/>
     </div>
         <div className='main-ball-two floating'>
           <div className='inside-rim'>
-              <div className= 'triangle'>
+              <div className='triangle'>
                 <p className='fortune'>{this.state.message}</p>
               </div>
           </div>
