@@ -50,6 +50,9 @@ var App = React.createClass({
     if(typeof userInput === 'string'){
       this._tellFortune()
     }
+    if(userInput.length === 0){
+      this._startGame()
+    }
   },
   
   render: function() {
@@ -62,7 +65,7 @@ var App = React.createClass({
         </a>
       </header>
       
-      <div className='content'>  
+        <div className='content'>  
           <div className='main-ball floating'>
             <div className='inside-ball'>
               <p className='eight'>:~)</p>
@@ -76,7 +79,7 @@ var App = React.createClass({
                 <button onClick={this._handleSubmit} className='ask-button'>Ask</button>
               </div>
           </form>
-       </div>
+        </div>
       </main>
       );
     }
@@ -98,8 +101,8 @@ var App = React.createClass({
         </div>
         
         <button onClick={this._startGame} className='restart-button floating-two'>Play again?</button>
-        </div>
-      </main>
+      </div>
+    </main>
       )
     }
   }
