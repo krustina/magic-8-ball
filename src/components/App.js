@@ -2,19 +2,25 @@ var React=require('react');
 
 
 var words=[
-    'lol no',
-    'ha yea',
-    'yup',
-    'im not sure',
-    'def',
-    'if only',
-    ':~) yes',
-    'reply ~hazy~',
-    'k',
-    ':~) no',
-    'wat?',
-    'ask again',
-    'nah',
+  //positive answers
+  'ha, yea',
+  'yes, def',
+  ':~) yes!',
+  'outlook good',
+  'oh ya',
+  
+  //non-committal
+  'reply ~hazy~',
+  'cannot predict atm',
+  'ask again',
+  'not sure rn',
+  
+  //negative answers
+  'lol no',
+  'dont count on it',
+  'nope',
+  'my sources say no',
+  'doubt it'
     ];
 
 var App = React.createClass({
@@ -52,7 +58,7 @@ var App = React.createClass({
       <main>
       <div className='logo-container'>
         <a href='https://github.com/krustina/magic-8-ball'>
-          <img className='logo' src='magic-8-ball-icon.png' role="presentation"/>
+          <img className='logo' src='magic-8-ball-icon2.png' role="presentation"/>
         </a>
       </div>
       
@@ -77,7 +83,7 @@ var App = React.createClass({
     return(
     <main>
     <div className='logo-container'>
-        <img className='logo' src='magic-8-ball-icon.png' role="presentation"/>
+        <img className='logo' src='magic-8-ball-icon2.png' role="presentation"/>
     </div>
         <div className='main-ball-two floating'>
           <div className='inside-rim'>

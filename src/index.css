@@ -141,6 +141,7 @@ input[type='text']{
   letter-spacing: 0;
   text-align: center;
   margin-bottom: 8.25em;
+  line-height: 25px;
 }
 .restart-button{
   margin-top: 5.5em;
