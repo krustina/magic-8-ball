@@ -4,7 +4,6 @@
   "private": true,
   "devDependencies": {
     "react-scripts": "0.7.0"
-  "homepage": "http://krustina.github.io/magic-8-ball"  
   },
   "dependencies": {
     "react": "^15.4.1",
